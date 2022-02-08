@@ -273,8 +273,5 @@ with col11:
     st.plotly_chart(fig_scatter1,  use_container_width=True, height=3000)
 
         
-#Ballon
-clicks=col11.button('Click to see the class')
-if clicks:
-    with st.expander(""):
-      placeh=st.image('image/DSA.png')
+
+

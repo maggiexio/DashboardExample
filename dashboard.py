@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import streamlit as st
 import pandas as pd
 import plotly 
@@ -6,13 +5,10 @@ import plotly.express as px
 import base64
 import difflib
 
-
-
 #@st.cache
 def raw_data(input_file):
   df=pd.read_csv(input_file)
   return df
-
 
 #######################glabal variables
 us_state_to_abbrev = {
@@ -95,7 +91,6 @@ country_dic=dict(zip(df_Country.Country, df_Country.Code3))
 key_c=  list(country_dic.keys())
 value_c=  list(country_dic.values())
 country_list = list(set(key_c) | set(value_c))
-
 
 
 #define functions

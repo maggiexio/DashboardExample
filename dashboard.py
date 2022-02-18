@@ -108,7 +108,7 @@ def table_download(df):
     out: href string
     """
     csv = df.to_csv(index=False)
-    b64 = base64.b64encode(csv.encode('utf-8')).decode('utf-8') 
+    b64 = base64.b64encode(csv.encode('ISO-8859-1')).decode('ISO-8859-1') 
     href = f'<a href="data:file/csv;base64,{b64}" download="myfile.csv">Download csv file</a>'
     return href
 

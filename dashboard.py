@@ -10,8 +10,8 @@ import time
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
-from tkinter import *
-import tkinter.messagebox
+from Tkinter import *
+import Tkinter.messagebox
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
   
      
@@ -31,7 +31,7 @@ class analysis_text():
         toplevel.geometry("%dx%d+%d+%d" % (size + (x, y)))
   
     def callback(self):
-        if tkinter.messagebox.askokcancel("Quit",
+        if Tkinter.messagebox.askokcancel("Quit",
                                           "Do you want to leave?"):
             self.main.destroy()
   

@@ -3,6 +3,7 @@ streamlit
 pandas
 plotly
 matplotlib
+python3-tk
 tk
 tkinter
 nltk

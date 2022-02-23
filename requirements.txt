@@ -3,5 +3,4 @@ streamlit
 pandas
 plotly
 matplotlib
-Tkinter
 nltk

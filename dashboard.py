@@ -10,7 +10,7 @@ import time
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
-import Tk
+import tk
 import tkinter.messagebox
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
   

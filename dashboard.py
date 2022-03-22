@@ -5,15 +5,7 @@ import plotly.express as px
 import csv
 import base64
 import difflib
-
-import time
-import numpy as np
-import matplotlib
-import matplotlib.pyplot as plt
-import _tkinter
-import _tkinter.messagebox
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
-  
+ 
      
 #@st.cache
 def raw_data(input_file):

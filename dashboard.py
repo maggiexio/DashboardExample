@@ -141,7 +141,7 @@ col11, col12 = st.columns((3,1))
 with col11:
   title_1="Data Excursion"
   st.markdown(f'<h1 style="text-align: center;color: green;">{title_1}</h1>',unsafe_allow_html=True)
-  subj_1="-- DSA Capstone Project"
+  subj_1="-- XXX Project"
   st.markdown(f'<h2 style="text-align: center;color: green;">{subj_1}</h2>',unsafe_allow_html=True) 
   st.markdown ("By: Maggie Xiong")
   st.markdown("Data file include 1169 studnets reponse time and raw score to each of the 20 items in the exampnation. Response time of the first item is missing. Total reponse time and score, together with geographical information and age are also provided. ")
@@ -149,8 +149,6 @@ with col11:
 with col12:
   title_11="Hello! I am Alexa. Can I help you?"
   st.markdown(f'<h2 style="text-align: center;color: purple;">{title_11}</h2>',unsafe_allow_html=True)
-  myanalysis = analysis_text()
-  mainloop()
   user_input =''
   user_input = st.text_area("Type your questions here (enter 'contrl+enter' to finish your questions)", value="", max_chars=5000)
   if user_input.lower().find('no question') != -1:

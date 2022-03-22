@@ -161,7 +161,7 @@ with col12:
         st.write ("Sorry, I am not sure! Please contact xxiong@ets.org")
          
 # read in data
-df_ori=raw_data("./data/data_capstone_dsa2021_2022.csv")
+df_ori=raw_data("./data/data_2021_2022.csv")
 df_ori['rt_gs_1']=""
 df_ori['state_corr']=""
 df_ori['state_abbr']=""

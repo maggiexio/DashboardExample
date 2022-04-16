@@ -163,7 +163,6 @@ with col12:
          
 # read in data
 df_ori=raw_data("./data/data_2021_2022.csv")
-df_Zullee=raw_data('C:/Users/XXiong/Documents/Study/Harvard Extension school/2022/spring/PreCapstone/Final Project/rating.csv')
 df_ori['rt_gs_1']=""
 df_ori['state_corr']=""
 df_ori['state_abbr']=""
@@ -254,8 +253,6 @@ with col11:
   with st.expander("Pie Charts:    check sum score distribution under country and state"):    
     fig_3=px.sunburst(df_1, color='sum_score',  path=['country_abbr','state_abbr'])
     st.plotly_chart(fig_3,   use_container_width=True, height=600)
-    fig_3_Zullee=px.sunburst(df_Zullee, color='rating',  path=['Source','Location'])
-    st.plotly_chart(fig_3_Zullee,   use_container_width=True, height=600)
   with st.expander("Tree Map:    check total response time distribution under country and state"):    
     fig_tree=px.treemap(df_1, color='rt_total',  path=['country_abbr','state_abbr'])
     st.plotly_chart(fig_tree, use_container_width=True, height=600)    

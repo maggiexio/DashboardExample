@@ -104,15 +104,15 @@ def Turn_DICT_Uppercase(dic):
 def is_similar(first, second, ratio):
     return difflib.SequenceMatcher(None, first, second).ratio() > ratio
 
-def table_download(df):
-    """Generates a link allowing the data in a given panda dataframe to be downloaded
-    in:  dataframe
-    out: href string
-    """
-    csv = df.to_csv(index=False)
-    b64 = base64.b64encode(csv.encode('utf-8')).decode('utf-8') 
-    href = f'<a href="data:file/csv;base64,{b64}" download="myfile.csv">Download csv file</a>'
-    return href
+#def table_download(df):
+#    """Generates a link allowing the data in a given panda dataframe to be downloaded
+#    in:  dataframe
+#    out: href string
+#    """
+#    csv = df.to_csv(index=False)
+#    b64 = base64.b64encode(csv.encode('utf-8')).decode('utf-8') 
+#    href = f'<a href="data:file/csv;base64,{b64}" download="myfile.csv">Download csv file</a>'
+#   return href
 
 def Find_State_Country(state_name): 
   state_abbrev=Turn_DICT_Uppercase(us_state_to_abbrev)

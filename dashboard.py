@@ -11,7 +11,7 @@ import difflib
 def raw_data(input_file):
 #  df=pd.read_csv(input_file, encoding = "ISO-8859-1")
   df=pd.read_csv(input_file)
-return df
+  return df
 
 #######################glabal variables
 us_state_to_abbrev = {
